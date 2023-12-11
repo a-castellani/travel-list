@@ -1,3 +1,5 @@
+Don't forget anything before your trip. Add items to your packing list and mark them as packed.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
