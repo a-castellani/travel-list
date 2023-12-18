@@ -65,7 +65,7 @@ export default function App() {
   }
 
   useEffect(
-    function (params) {
+    function () {
       localStorage.setItem("items", JSON.stringify(items));
     },
     [items]
@@ -87,7 +87,7 @@ export default function App() {
 }
 
 function Stats({ items }) {
-  if (!items.length)
+  if (!items?.length)
     return (
       <p className="stats">
         <em>Start adding some items to your packing list 🚀</em>
