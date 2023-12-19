@@ -37,12 +37,13 @@ function convertToFlag(countryCode) {
 
 export default function App() {
   const [items, setItems] = useState(function () {
-    const storedItems = localStorage.getItem("items");
+    let storedItems = [];
+    storedItems = localStorage.getItem("items");
     return JSON.parse(storedItems);
   });
 
   function handleAddItems(item) {
-    setItems((items) => (items ? [...items, item] : [item]));
+    setItems((items) => [...items, item]);
   }
 
   function handleDeleteItems(id) {
