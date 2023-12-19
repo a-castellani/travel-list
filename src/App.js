@@ -43,7 +43,7 @@ export default function App() {
   });
 
   function handleAddItems(item) {
-    setItems((items) => [...items, item]);
+    !items ? setItems([item]) : setItems((items) => [...items, item]);
   }
 
   function handleDeleteItems(id) {
